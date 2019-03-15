@@ -6,6 +6,7 @@ class CreateOrders < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :name
       t.string :status
+      t.references :user
 
       t.timestamps
     end
