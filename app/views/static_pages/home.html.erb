@@ -67,13 +67,13 @@
       <div class="tab-content jump">
         <div id="tab1" class="tab-pane active">
           <div class="row">
-            <%# @products.each do |product| %>
-              <!-- <div class="custom-col-5"> -->
-                <!-- <div class="product-wrapper mb-25"> -->
-                  <%= render @products %>
-                <!-- </div> -->
-              <!-- </div> -->
-            <%# end %>
+            <% @products.each do |product| %>
+              <div class="custom-col-5">
+                <div class="product-wrapper mb-25">
+                  <%= render product %>
+                </div>
+              </div>
+            <% end %>
             <%= will_paginate @products %>
           </div>
         </div>
@@ -127,6 +127,7 @@
                   <div class="product-wrapper col-md-4 float-left">
                     <%= render "products/best_product", best_product: best_product %>
                   </div>
+
                 <% end %>
               </div>
             </div>
@@ -171,4 +172,3 @@
   <%= link_to "Login", login_path %>
   <%= link_to "Sing up", signup_path %>
 <% end %>
-

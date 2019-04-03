@@ -5,12 +5,12 @@
 #              phone: "0123456789"
 #              address: "Hanoi",
 #              role: :admin)
-User.create!(name:  "dinhvantuyen",
-             email: "dinhtuyen.dgt@gmail.com",
-             password:              "123456",
-             password_confirmation: "123456",
-             address: "Hanoi",
-             phone: "0123456789")
+# User.create!(name:  "dinhvantuyen",
+#              email: "dinhtuyen.dgt@gmail.com",
+#              password:              "123456",
+#              password_confirmation: "123456",
+#              address: "Hanoi",
+#              phone: "0123456789")
              # admin: true,
              # activated: true,
              # activated_at: Time.zone.now
@@ -37,10 +37,6 @@ Product.create!(name:  "Thit kho",
                sale_count: sale_count,
                description: description)
 end
-             phone: "0123456789",
-             role: :admin,
-             activated: true,
-             activated_at: Time.zone.now)
 
 User.create!(name:  "Duke",
              email: "thuanduc.97@gmail.com",
@@ -48,7 +44,7 @@ User.create!(name:  "Duke",
              password_confirmation: "123456",
              address: "Hanoi",
              phone: "0975224497",
-             role: :admin,
+             role: 1,
              activated: true,
              activated_at: Time.zone.now)
 
